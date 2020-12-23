@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "title": "The Da Vinci Code",
+        "author": "Dan Brown",
+        "publisher": "Doubleday",
+        "year": "2003",
+        "isbn": "0-385-50420-9"
+    },
+    {
+        "id": 2,
+        "title": "Harry Potter and the Philosopher's Stone",
+        "author": "J. K. Rowling",
+        "publisher": "Bloomsbury",
+        "year": "1997",
+        "isbn": "0-7475-3269-9"
+    },
+    {
+        "id": 3,
+        "title": "Life of Pi",
+        "author": "Yann Martel",
+        "publisher": "Knopf Canada",
+        "year": "2001",
+        "isbn": "0-676-97376-0"
+    },
+    {
+        "id": 4,
+        "title": "In Search of Lost Time",
+        "author": "Lydia Davis",
+        "publisher": "Penguin Classics",
+        "year": "2004",
+        "isbn": "978-0142437964"
+    },
+    {
+        "id": 5,
+        "title": "One Hundred Years of Solitude",
+        "author": "Gabriel Garcia Marquez",
+        "publisher": "Harper Perennial Modern Classics",
+        "year": "2006",
+        "isbn": "0060883286"
+    },
+    {
+        "id": 6,
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "publisher": "Scribner Book Company",
+        "year": "2004",
+        "isbn": "978-0743273565"
+    },
+    {
+        "id": 7,
+        "title": "War and Peace",
+        "author": "Leo Tolstoy",
+        "publisher": "Vintage",
+        "year": "2008",
+        "isbn": "978-1400079988"
+    },
+    {
+        "id": 8,
+        "title": "Hamlet",
+        "author": "William Shakespeare",
+        "publisher": "Simon & Schuster",
+        "year": "1992",
+        "isbn": "978-0743477123"
+    },
+    {
+        "id": 9,
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "publisher": "Independently published",
+        "year": "2020",
+        "isbn": "979-8565411881"
+    },
+    {
+        "id": 10,
+        "title": "1984",
+        "author": "George Orwell",
+        "publisher": "Signet Classic",
+        "year": "1961",
+        "isbn": "978-0451524935"
+    }
+]

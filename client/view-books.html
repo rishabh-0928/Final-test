@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>View Books</title>
+		<link rel="stylesheet" href="css/theme.blue.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="js/config.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script src="js/view-books.js" defer></script>
+	</head>
+	<body>
+		<div class="header-container">
+			<header>
+				<h1>Library</h1>
+			</header>
+		</div>
+
+		<div class="nav-container">
+			<nav>
+				<ul>
+					<li><a href="http://localhost:1234">Home</a></li>
+					<li><a href="browse-library.html">Browse Books</a></li>
+					<li class="active"><a href="view-books.html">View Books</a></li>
+					<li><a href="add-book.html">Add Book</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div data-ng-app="viewBooksApp" data-ng-controller="viewBooksController" id="view-books">
+			<table class="tablesorter-blue">
+				<tr>
+					<th>ID:</th>
+					<td>{{ book.id }}</td>
+				</tr>
+
+				<tr>
+					<th>Book Title</th>
+					<td>{{ book.title }}</td>
+				</tr>
+
+				<tr>
+					<th>Author</th>
+					<td>{{ book.author }}</td>
+				</tr>
+
+				<tr>
+					<th>Publisher</th>
+					<td>{{ book.publisher }}</td>
+				</tr>
+
+				<tr>
+					<th>Year</th>
+					<td>{{ book.year }}</td>
+				</tr>
+
+				<tr>
+					<th>ISBN</th>
+					<td>{{ book.isbn }}</td>
+				</tr>
+			</table>
+
+			<div id="buttons-container">
+				<button data-ng-click="getPreviousBook()" data-ng-disabled="prevDisabled">Previous</button>
+				<button data-ng-click="getNextBook()" data-ng-disabled="nextDisabled">Next</button>
+			</div>
+		</div>
+	</body>
+</html>

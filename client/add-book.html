@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Add Book to Database</title>
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="js/config.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="js/add-book.js" defer></script>
+</head>
+<body>
+    <div class="header-container">
+        <header>
+            <h1>Library</h1>
+        </header>
+    </div>
+
+    <div class="nav-container">
+        <nav>
+            <ul>
+                <li><a href="http://localhost:1234">Home</a></li>
+                <li><a href="browse-library.html">Browse Books</a></li>
+                <li><a href="view-books.html">View Books</a></li>
+                <li class="active"><a href="add-book.html">Add Book</a></li>
+            </ul>
+        </nav>
+    </div>
+
+	<div class="form-container" data-ng-app="addBookApp" data-ng-controller="addBookController">
+		<form>
+			<fieldset>
+				<legend>Book Insertion Form</legend>
+				<label for="title">Book title:</label>
+				<input type="text" name="title" id="title" data-ng-model="title"> <br>
+		
+				<label for="author">Author:</label>
+				<input type="text" name="author" id="author" data-ng-model="author"> <br>
+		
+				<label for="publisher">Publisher:</label>
+				<input type="text" name="publisher" id="publisher" data-ng-model="publisher"> <br>
+		
+				<label for="year">Year Published:</label>
+				<input type="text" name="year" id="year" data-ng-model="year"> <br>
+		
+				<label for="isbn">ISBN:</label>
+				<input type="text" name="isbn" id="isbn" data-ng-model="isbn"> <br>
+		
+				<input type="submit" value="Submit" data-ng-click="addBook()">
+			</fieldset>
+		</form>
+		<p class="status">{{ status }}</p>
+	</div>
+</body>
+</html>
